@@ -8,8 +8,6 @@ import { useDebounce } from "react-use";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
 import Trending from "./components/Trending";
 
-updateSearchCount();
-
 const App = () => {
   const [searchVal, setSearchVal] = useState("");
   const [debouncedSearchVal, setDebouncedSearchVal] = useState("");
